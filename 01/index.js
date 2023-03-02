@@ -44,10 +44,28 @@ function checkRequired(input){
     });
 }
 
+function checkLength(input, min, max){
+    console.log(input.value.length)
+    if (input.value.length < min) {
+        showError(input, `${input.id} should be at least ${min}`)
+        
+    }
+    else if(input.value.length > max) {
+        showError(input, `${input.id} should be less than ${max}`)
+    }
+    else{
+        showSeccess(input)
+    }
+    
+
+}
+
 
 
 // Event Listener
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     checkRequired([username, email, password, confirm])
+    checkLength(password, 10, 20)
+    checkLength(username, 10, 30)
 })
