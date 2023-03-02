@@ -6,11 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&family=Vollkorn&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
+<div class="container">
+    <form class="form" id="form">
+        <h2>Register with us</h2>
+        <div class="form-control">
+            <label for="username">UserName:</label>
+            <input type="text" id="username" placeholder="enter yousername">
+            <small>Error meesage</small>
+        </div>
 
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="enter email">
+            <small>Error meesage</small>
+        </div>
+
+        <div class="form-control">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="enter password">
+            <small>Error meesage</small>
+        </div>
+        
+        <div class="form-control">
+            <label for="confirm">Confirm</label>
+            <input type="password" id="confirm" placeholder="enter confirm password">
+            <small>Error meesage</small>
+        </div>
+
+        <button>Register</button>
+    </form>
+</div>
 
 
 
